@@ -14,7 +14,8 @@
         }
 
         body {
-            background: #f4f4f4;
+            background: linear-gradient(rgba(255,255,255,0.86), rgba(255,255,255,0.86)),
+            url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop') center/cover fixed;
             color: #333;
             line-height: 1.6;
         }
@@ -62,8 +63,7 @@
             align-items: center;
             justify-content: center;
             padding: 60px;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-            url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop') center/cover;
+            background: rgba(0, 0, 0, 0.548);
             color: white;
         }
 
@@ -112,6 +112,10 @@
 
         section {
             padding: 80px 50px;
+        }
+
+        section:not(.hero) {
+            background: rgba(255,255,255,0.84);
         }
 
         .section-title {
@@ -366,6 +370,10 @@
 
                     <div class="skill-box">
                         <h3>C# & ASP.NET</h3>
+                        <p>Backend and system development.</p>
+                    </div>
+                    <div class="skill-box">
+                        <h3>Python Dev</h3>
                         <p>Backend and system development.</p>
                     </div>
                 </div>
