@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pass or Fail</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Student Results</h1>
+        </header>
+
+        <main>
+            <section>
+                <form id="student-form" novalidate>
+                    <div>
+                        <label for="student-name">Student Name :</label>
+                        <input id="student-name" type="text" name="name" placeholder="Enter student name">
+                    </div>
+
+                    <div>
+                        <label for="student-mark">Mark (0–100)</label>
+                        <input id="student-mark" type="number" name="mark" min="0" max="100" placeholder="0">
+                    </div>
+
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </section>
+
+            <section id="result-area">
+                <h3>Pass or Fail</h3>
+                <div id="result" aria-live="polite"></div>
+            </section>
+
+            <section>
+                <h3>Submitted Students</h3>
+                <ul id="students-list"></ul>
+            </section>
+        </main>
+
+       
+    </body>
+</html>
